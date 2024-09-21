@@ -50,13 +50,13 @@
         "exponent": 0.5,
         "range": ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#0c2c84"] },
       "legend": {
-        "title": "Cases per 10,000 Population"
+        "title": "Disorders per 10,000 Population"
     }},
     "tooltip": [
       {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
       {"field": "SelectedDisorderValue", "type": "quantitative", "title": "Total Cases"},
       {"field": "Population", "type": "quantitative", "title": "Population"},
-      {"field": "NormalizedDisorderValue", "type": "quantitative", "title": "Cases per Capita"}
+      {"field": "NormalizedDisorderValue", "type": "quantitative", "title": "Disorders per Capita", "format" : ".2f"}
     ]
   }
 }
