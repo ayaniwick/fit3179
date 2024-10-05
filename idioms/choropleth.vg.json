@@ -8,7 +8,7 @@
   "height": 400,
   "projection": {"type": "mercator"},
   "data": {
-    "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/states.json",
+    "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/states.json",
     "format": {"type": "topojson", "feature": "Aus_states"}
   },
   "transform": [
@@ -16,7 +16,7 @@
       "lookup": "properties.STATE_NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/mental_health_by_state.csv"
+          "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/mental_health_by_state.csv"
         },
         "key": "State",
         "fields": ["Anxiety", "Affective", "Substance Use", "Mental Disorder", "Total", "Population"]

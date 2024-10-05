@@ -12,34 +12,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-    <script src="vega_choropleth.js"></script>
+    <script src="JavaScript/java_idioms.js"></script>
 
 </head>
 <body>
     <h1>How Serious is Mental Health in Australia?</h1>
     
     <!-- Container where the map will be embedded -->
-    
     <div class="pure-g">
+        <!-- First idiom: the map -->
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
-            <div id="vis"></div>
-            <div id="vis"></div>
+            <div id="vis"></div> <!-- This is where the map will be embedded -->
         </div>
+
+        <!-- Second idiom: the radial chart -->
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
-            <div id="vis"></div>
+            <div id="radial_chart"></div> <!-- This is where the radial chart will be embedded -->
         </div>
-        
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
-            <div id="vis"></div> </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">Column 2, Row 2
-            <div id="vis"></div>
-        </div>
-        
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">Column 1, Row 3</div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">Column 2, Row 3</div>
-        
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">Column 1, Row 4</div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">Column 2, Row 4</div>
     </div>
 
     
