@@ -1,51 +1,60 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A radial chart showing psychological distress levels by gender",
-    "data": {
-      "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/cleaned_psychological_distress.csv",
-      "format": {
-        "type": "csv",
-        "parse": {"Total": "number"}
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Psychological distress experienced by gender",
+    "fontSize": 20, 
+    "anchor": "middle"
+  },
+  "width": 400, 
+  "height": 400, 
+  "data": {
+    "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/cleaned_psychological_distress.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"Total": "number"}
+    }
+  },
+  "layer": [{
+    "mark": {
+      "type": "arc",
+      "innerRadius": 50,
+      "stroke": "#fff"
     },
-    "layer": [{
-      "mark": {
-        "type": "arc",
-        "innerRadius": 30,
-        "stroke": "#fff"
-      },
-      "encoding": {
-        "theta": {"field": "Total", "type": "quantitative", "stack": true},
-        "color": {
-          "field": "Level",
-          "type": "nominal",
-          "scale": {
-            "domain": ["Low", "Moderate", "High", "Very high"],
-            "range": ["green", "yellow", "orange", "red"]
-          },
-          "title": "Distress Level"
-        },
-        "tooltip": [
-          {"field": "Gender", "type": "nominal", "title": "Gender"},
-          {"field": "Level", "type": "nominal", "title": "Distress Level"},
-          {"field": "Total", "type": "quantitative", "title": "Total"}
-        ]
-      }
-    },{
-      "mark": {"type": "text", "radiusOffset": 10},
-      "encoding": {
-        "text": {"field": "Total", "type": "quantitative"}
-      }
-    }],
     "encoding": {
-      "radius": {"field": "Total", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+      "theta": {"field": "Total", "type": "quantitative", "stack": true},
       "color": {
-        "field": "Gender",
+        "field": "Level",
         "type": "nominal",
-        "legend": {
-          "title": ["Level of", "psychological distress"]
-        }
+        "scale": {
+          "domain": ["Low", "Moderate", "High", "Very high"],
+          "range": ["green", "yellow", "orange", "red"]
+        },
+        "title": "Distress Level"
+      },
+      "tooltip": [
+        {"field": "Gender", "type": "nominal", "title": "Gender"},
+        {"field": "Level", "type": "nominal", "title": "Distress Level"},
+        {"field": "Total", "type": "quantitative", "title": "Total"}
+      ]
+    }
+  },{
+    "mark": {"type": "text", "radiusOffset": 10},
+    "encoding": {
+      "text": {"field": "Total", "type": "quantitative"}
+    }
+  }],
+  "encoding": {
+    "radius": {"field": "Total", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "legend": {
+        "title": "Distress level"
       }
     }
+  },
+  "config": {
+    "view": {"stroke": null},
+    "arc": {"align": "center"}
   }
-  
+}
