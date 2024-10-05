@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Study of Mental Wellbeing in Australia</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <!-- Vega and Vega-Lite libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <script src="vega_choropleth.js"></script>
+
+</head>
+<body>
+    <h1>How Serious is Mental Health in Australia?</h1>
+    
+    <!-- Container where the map will be embedded -->
+    
+    <div class="pure-g">
+        <!-- Row 1 -->
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis1"></div> <!-- Visualization container 1 -->
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis2"></div> <!-- Visualization container 2 -->
+        </div>
+
+        <!-- Row 2 -->
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis3"></div> <!-- Visualization container 3 -->
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis4"></div> <!-- Visualization container 4 -->
+        </div>
+
+        <!-- Row 3 -->
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis5"></div> <!-- Visualization container 5 -->
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis6"></div> <!-- Visualization container 6 -->
+        </div>
+
+        <!-- Row 4 -->
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis7"></div> <!-- Visualization container 7 -->
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
+            <div id="vis8"></div> <!-- Visualization container 8 -->
+        </div>
+    </div>
+
+    <script>
+        // Example: embedding a Vega-Lite visualization into each div
+        var vegaSpec1 = "path_to_vega_spec1.vg.json";
+        var vegaSpec2 = "path_to_vega_spec2.vg.json";
+        var vegaSpec3 = "path_to_vega_spec3.vg.json";
+        var vegaSpec4 = "path_to_vega_spec4.vg.json";
+        var vegaSpec5 = "path_to_vega_spec5.vg.json";
+        var vegaSpec6 = "path_to_vega_spec6.vg.json";
+        var vegaSpec7 = "path_to_vega_spec7.vg.json";
+        var vegaSpec8 = "path_to_vega_spec8.vg.json";
+
+        vegaEmbed('#vis1', vegaSpec1);
+        vegaEmbed('#vis2', vegaSpec2);
+        vegaEmbed('#vis3', vegaSpec3);
+        vegaEmbed('#vis4', vegaSpec4);
+        vegaEmbed('#vis5', vegaSpec5);
+        vegaEmbed('#vis6', vegaSpec6);
+        vegaEmbed('#vis7', vegaSpec7);
+        vegaEmbed('#vis8', vegaSpec8);
+    </script>
+    
+</body>
+</html>

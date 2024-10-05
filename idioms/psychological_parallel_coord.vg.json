@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Parallel coordinate plot for levels of psychological distress by gender.",
+    "data": {
+      "values": [
+        {"Gender": "Male", "Low": 6420.0, "Moderate": 1954.8, "High": 904.9, "Very high": 452.9},
+        {"Gender": "Female", "Low": 5903.0, "Moderate": 2185.7, "High": 1299.1, "Very high": 655.1},
+        {"Gender": "Non-binary", "Low": 12322.1, "Moderate": 4140.4, "High": 2204.5, "Very high": 1100.8}
+      ]
+    },
+    "width": 600,
+    "height": 300,
+    "transform": [
+      {
+        "fold": ["Low", "Moderate", "High", "Very high"],
+        "as": ["DistressLevel", "Total"]
+      }
+    ],
+    "encoding": {
+      "x": {"field": "Gender", "type": "nominal"},
+      "y": {"field": "Total", "type": "quantitative"},
+      "color": {
+        "field": "DistressLevel",
+        "scale": {
+          "domain": ["Low", "Moderate", "High", "Very high"],
+          "range": ["green", "yellow", "orange", "red"]
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {"field": "DistressLevel"}
+        }
+      }
+    ]
+  }
+  

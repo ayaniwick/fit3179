@@ -50,3 +50,10 @@ h1 {
     font-size: 1.2em;
     padding: 5px;
 }
+
+.block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 5px 0;
+}

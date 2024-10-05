@@ -1,0 +1,11 @@
+[
+    {"State": "New South Wales", "Anxiety": 3448, "Affective": 1998.5, "Substance Use": 2128.1, "Mental Disorder": 5075.5},
+    {"State": "Victoria", "Anxiety": 3003.5, "Affective": 1595, "Substance Use": 1900.1, "Mental Disorder": 4341.4},
+    {"State": "Queensland", "Anxiety": 2412.9, "Affective": 1358.1, "Substance Use": 1657.8, "Mental Disorder": 3631.5},
+    {"State": "South Australia", "Anxiety": 736, "Affective": 376.1, "Substance Use": 573, "Mental Disorder": 1129.5},
+    {"State": "Western Australia", "Anxiety": 1193.3, "Affective": 649.4, "Substance Use": 1038.3, "Mental Disorder": 1889.9},
+    {"State": "Tasmania", "Anxiety": 151.4, "Affective": 96.5, "Substance Use": 131.4, "Mental Disorder": 237},
+    {"State": "Northern Territory", "Anxiety": 41.8, "Affective": 18.9, "Substance Use": 46.2, "Mental Disorder": 71.1},
+    {"State": "Australian Capital Territory", "Anxiety": 125.9, "Affective": 57.1, "Substance Use": 59.9, "Mental Disorder": 159}
+  ]
+  
