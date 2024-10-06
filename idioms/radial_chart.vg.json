@@ -15,6 +15,22 @@
     }
   },
   "layer": [{
+    "params": [
+    {
+      "name": "selectedDistress",        
+      "select": {                       
+        "type": "point",
+        "fields": ["Level"],
+        "on": "click"                    
+      },
+      "value": null                      
+    }
+  ],
+  "transform": [
+    {
+      "filter": "selectedDistress.Level == null || datum.Level == selectedDistress.Level"
+    }
+  ],
     "mark": {
       "type": "arc",
       "innerRadius": 50,
