@@ -18,19 +18,14 @@
 <body>
     <h1>How Serious is Mental Health in Australia?</h1>
     
-    <!-- Container where the map will be embedded -->
+    <!-- Pure CSS Grid Layout with Flexbox inside -->
     <div class="pure-g">
-        <!-- First idiom: the map -->
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
-            <div id="vis"></div> <!-- This is where the map will be embedded -->
-        </div>
-
-        <!-- Second idiom: the radial chart -->
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 block">
-            <div id="radial_chart"></div> <!-- This is where the radial chart will be embedded -->
+       
+        <div class="pure-u-1 pure-u-md-1-2 flex-container">
+            
+            <div id="vis" class="chart-item"></div>
+            <div id="radial_chart" class="chart-item"></div>
         </div>
     </div>
-
-    
 </body>
 </html>

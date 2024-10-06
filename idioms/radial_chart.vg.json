@@ -2,11 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Psychological distress experienced by gender",
-    "fontSize": 20, 
+    "fontSize": 20,
     "anchor": "middle"
   },
-  "width": 400, 
-  "height": 400, 
+  "width": 400,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/cleaned_psychological_distress.csv",
     "format": {
@@ -49,7 +49,9 @@
       "field": "Gender",
       "type": "nominal",
       "legend": {
-        "title": "Distress level"
+        "title": "Distress level",
+        "titleFontSize": 17,  
+        "labelFontSize": 15    
       }
     }
   },
