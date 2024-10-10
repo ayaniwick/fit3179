@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A heatmap representing alcohol consumption by gender.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/alcohol_consumption.csv",
+      "format": {
+        "type": "csv",
+        "parse": {"Total": "number"}  
+      }
+    },
+    "width": 400,
+  "height": 400,
+    "mark": "rect",
+    "encoding": {
+      "x": {
+        "field": "Alcohol consumption",
+        "type": "nominal",
+        "title": "Alcohol Consumption",
+        "sort": ["Nearly every day", "3–4 days a week", "1–2 days a week", "1–3 days a month", "Less than once a month"]
+      },
+      "y": {
+        "field": "Gender",
+        "type": "nominal",
+        "title": "Gender"
+      },
+      "color": {
+        "field": "Total",
+        "type": "quantitative",
+        "scale": {"scheme": "yellowgreenblue"},
+        "title": "Total Consumption"
+      },
+      "tooltip": [
+        {"field": "Gender", "type": "nominal", "title": "Gender"},
+        {"field": "Alcohol consumption", "type": "nominal", "title": "Alcohol Consumption"},
+        {"field": "Total", "type": "quantitative", "title": "Total Consumption"}
+      ]
+    },
+    "config": {
+      "axis": {"labelAngle": 45}
+    }
+  }
+  
