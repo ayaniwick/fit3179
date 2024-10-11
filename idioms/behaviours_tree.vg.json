@@ -1,0 +1,109 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "A treemap showing suicidal thoughts and behaviors by gender with tooltips and legend.",
+    "title": {
+      "text": "Suicidal behaviours experienced by each gender",
+      "fontSize": 20,
+      "anchor": "middle"
+    },
+    "width": 500,
+    "height": 400,
+    "padding": 5,
+    "data": [
+      {
+        "name": "table",
+        "values": [
+          {"Gender": "Male", "Category": "Thoughts", "Total": 1463.7},
+          {"Gender": "Male", "Category": "Plans", "Total": 655.3},
+          {"Gender": "Male", "Category": "Attempts", "Total": 399.7},
+          {"Gender": "Female", "Category": "Thoughts", "Total": 1841.0},
+          {"Gender": "Female", "Category": "Plans", "Total": 814.8},
+          {"Gender": "Female", "Category": "Attempts", "Total": 572.9},
+          {"Gender": "Non-binary", "Category": "Thoughts", "Total": 3304.7},
+          {"Gender": "Non-binary", "Category": "Plans", "Total": 1475.9},
+          {"Gender": "Non-binary", "Category": "Attempts", "Total": 968.1}
+        ],
+        "transform": [
+          {
+            "type": "filter",
+            "expr": "datum.Total > 0"
+          }
+        ]
+      },
+      {
+        "name": "hierarchy",
+        "source": "table",
+        "transform": [
+          {
+            "type": "nest",
+            "keys": ["Gender", "Category"]
+          },
+          {
+            "type": "treemap",
+            "field": "Total",
+            "sort": {"field": "value"},
+            "round": true,
+            "size": [{"signal": "width"}, {"signal": "height"}],
+            "paddingInner": 1
+          }
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": {"data": "table", "field": "Gender"},
+        "range": {"scheme": "category10"}
+      }
+    ],
+    "legends": [
+      {
+        "fill": "color",
+        "title": "Gender",
+        "orient": "right",
+        "labelFontSize": 12,
+        "titleFontSize": 14
+      }
+    ],
+    "marks": [
+      {
+        "type": "rect",
+        "from": {"data": "hierarchy"},
+        "encode": {
+          "enter": {
+            "x": {"field": "x0"},
+            "y": {"field": "y0"},
+            "x2": {"field": "x1"},
+            "y2": {"field": "y1"},
+            "fill": {"scale": "color", "field": "Gender"}
+          },
+          "update": {
+            "fillOpacity": {"value": 1}
+          },
+          "hover": {
+            "fillOpacity": {"value": 0.8},
+            "tooltip": {
+              "signal": "{'Gender': datum.Gender, 'Category': datum.Category, 'Total': datum.Total}"
+            }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "from": {"data": "hierarchy"},
+        "encode": {
+          "enter": {
+            "x": {"signal": "(datum.x0 + datum.x1) / 2"},
+            "y": {"signal": "(datum.y0 + datum.y1) / 2"},
+            "align": {"value": "center"},
+            "baseline": {"value": "middle"},
+            "text": {"field": "Category"},
+            "fill": {"value": "black"},
+            "fontSize": {"value": 12}
+          }
+        }
+      }
+    ]
+  }
+  
