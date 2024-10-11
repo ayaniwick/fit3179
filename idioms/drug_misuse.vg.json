@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A heatmap representing drug misuse by gender.",
+    "title": {
+      "text": "Frequency of Drug Misuse",
+      "fontSize": 20,
+      "anchor": "middle"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/misuse_drugs.csv",
+      "format": {
+        "type": "csv",
+        "parse": {"Total": "number"}
+      }},
+       "width": 400,
+      "height": 400,
+    "mark": "rect",
+    "encoding": {
+      "x": {
+        "field": "Misuse of drugs",
+        "type": "nominal",
+        "title": "Drug Misuse Frequency",
+        "sort": ["At least once a week", "1–3 days a month", "Less than once a month"]
+      },
+      "y": {
+        "field": "Gender",
+        "type": "nominal",
+        "title": "Gender"
+      },
+      "color": {
+        "field": "Total",
+        "type": "quantitative",
+        "scale": {"scheme": "yellowgreenblue"},
+        "title": "Total Drug Misuse"
+      },
+      "tooltip": [
+        {"field": "Gender", "type": "nominal", "title": "Gender"},
+        {"field": "Misuse of drugs", "type": "nominal", "title": "Drug Misuse Frequency"},
+        {"field": "Total", "type": "quantitative", "title": "Total Drug Misuse"}
+      ]
+    },
+    "config": {
+      "axis": {"labelAngle": 45}
+    }
+  }
+  

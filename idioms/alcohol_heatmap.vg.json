@@ -1,6 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A heatmap representing alcohol consumption by gender.",
+    "title": {
+      "text": "Frequency of Alcohol Consumption",
+      "fontSize": 20,
+      "anchor": "middle"
+    },
     "width": 400,
     "height": 400,
     "data": {
