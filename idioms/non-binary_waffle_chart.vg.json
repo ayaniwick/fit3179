@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A waffle chart showing the percentage of people who have confided.",
     "title": {
-        "text": "% of people who have confided for support",
+        "text": "% of Non-Binary people who have confided for support",
         "fontSize": 20,
         "anchor": "middle"
       },
@@ -48,7 +48,7 @@
       "color": {
         "field": "Whether confided",
         "type": "nominal",
-        "scale": {"range": ["#B07AA1", "#79706e"]},  
+        "scale": {"range": ["#9467bd", "#79706e"]},  
         "legend": {
           "orient": "right",
           "offset": 10,

@@ -28,7 +28,7 @@ vegaEmbed('#stacked_chart', vg_6).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-var vg_7 = "idioms/male_waffle_chart.vg.json";
+var vg_7 = "idioms/men_waffle_chart.vg.json";
 vegaEmbed('#male_waffle', vg_7).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
@@ -38,7 +38,7 @@ vegaEmbed('#female_waffle', vg_8).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-var vg_9 = "idioms/non_binary_waffle_chart.vg.json";
+var vg_9 = "idioms/non-binary_waffle_chart.vg.json";
 vegaEmbed('#non-binary_waffle', vg_9).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);

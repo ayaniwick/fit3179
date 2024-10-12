@@ -50,7 +50,7 @@
         "name": "color",
         "type": "ordinal",
         "domain": ["Male", "Female", "Non-binary"],
-        "range": ["#59A14F", "#ff9da6", "#B07AA1"]  
+        "range": ["#59A14F", "#ff9da6", "#9467bd"]  
       }
     ],
     "legends": [
