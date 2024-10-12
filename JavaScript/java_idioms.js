@@ -22,3 +22,23 @@ var vg_5 = "idioms/behaviours_tree.vg.json";
 vegaEmbed('#behaviour_treemap', vg_5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
+var vg_6 = "idioms/stacked_chart_age.vg.json";
+vegaEmbed('#stacked_chart', vg_6).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+var vg_7 = "idioms/male_waffle_chart.vg.json";
+vegaEmbed('#male_waffle', vg_7).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+var vg_8 = "idioms/women_waffle_chart.vg.json";
+vegaEmbed('#female_waffle', vg_8).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
+
+var vg_9 = "idioms/non_binary_waffle_chart.vg.json";
+vegaEmbed('#non-binary_waffle', vg_9).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
