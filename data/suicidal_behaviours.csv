@@ -1,22 +1,10 @@
-﻿Gender,Detailed age groups,Total
-Male,16–24,1386.5
-Male,25–34,1805.2
-Male,35–44,1720.4
-Male,45–54,1584.7
-Male,55–64,1450.6
-Male,65–74,1150.5
-Male,75–85,670.5
-Female,16–24,1319.2
-Female,25–34,1826.5
-Female,35–44,1783.3
-Female,45–54,1623.7
-Female,55–64,1525.2
-Female,65–74,1241.7
-Female,75–85,737.8
-Non-binary,16–24,2712.5
-Non-binary,25–34,3632.0
-Non-binary,35–44,3500.9
-Non-binary,45–54,3217.3
-Non-binary,55–64,2971.6
-Non-binary,65–74,2391.2
-Non-binary,75–85,1402.9
+﻿Gender,Suicidal thoughts and behaviours in lifetime,Total
+Male,Thoughts,1463.7
+Male,Plans,655.3
+Male,Attempts,399.7
+Female,Thoughts,1841.0
+Female,Plans,814.8
+Female,Attempts,572.9
+Non-binary,Thoughts,3304.7
+Non-binary,Plans,1475.9
+Non-binary,Attempts,968.1
