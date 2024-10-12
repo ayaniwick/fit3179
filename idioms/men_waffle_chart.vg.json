@@ -65,6 +65,7 @@
     ]
   },
   "config": {
+    "background": "#20c0c063",
     "legend": {
       "labelFontSize": 14,
       "titleFontSize": 16

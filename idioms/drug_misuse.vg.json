@@ -47,6 +47,7 @@
       ]
     },
     "config": {
+        "background": "#d6a5c945",
       "axis": {"labelAngle": 45}
     }
   }

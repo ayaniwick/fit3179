@@ -3,7 +3,8 @@
   "title": {
     "text": "Mental health disorders by state in Australia",
     "fontSize": 20, 
-    "anchor": "middle"},
+    "anchor": "middle"
+  },
   "width": 400,
   "height": 400,
   "projection": {"type": "mercator"},
@@ -27,7 +28,7 @@
       "as": "SelectedDisorderValue"
     },
     {
-      "calculate": "datum.SelectedDisorderValue / datum.Population *10000",  
+      "calculate": "datum.SelectedDisorderValue / datum.Population * 10000",  
       "as": "NormalizedDisorderValue"
     }
   ],
@@ -51,16 +52,25 @@
       "scale": {
         "type": "pow",
         "exponent": 0.5,
-        "range": ["#fee6ce", "#fdae6b", "#f16913", "#d94801", "#7f2704"] },
+        "range": ["#fee6ce", "#fdae6b", "#f16913", "#d94801", "#7f2704"]
+      },
       "legend": {
-        "title": ["Disorders per " ,"10,000 population"], 
+        "title": ["Disorders per ", "10,000 population"], 
         "titleFontSize": 14,  
         "labelFontSize": 12
-      }},
+      }
+    },
     "tooltip": [
       {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
       {"field": "SelectedDisorderValue", "type": "quantitative", "title": "Total Cases"},
       {"field": "NormalizedDisorderValue", "type": "quantitative", "title": "Disorders per Capita", "format" : ".2f"}
     ]
+  },
+  "config": {
+    "background": "#d6a5c945",       
+    "padding": 10,                    
+    "view": {          
+      "stroke": null                  
+    }
   }
 }

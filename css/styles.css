@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f4f4f4;
+    background-color: #ebb9a14e;
     color: #333;
 }
 
@@ -22,9 +22,9 @@ h1 {
 /* Ensure each chart takes up 48% of the space inside the flex container */
 .chart-item {
     width: 48%;
-    border: 1px solid #ddd;
+   
     padding: 20px;
-    background-color: white;
+    background-color: #d6a5c945;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }

@@ -42,6 +42,7 @@
       ]
     },
     "config": {
+        "background": "#d6a5c945",
       "axis": {
         "labelFontSize": 14,
         "titleFontSize": 16
