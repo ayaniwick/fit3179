@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Mental disorders discovered in different age groups",
+      "fontSize": 20,
+      "anchor": "middle"
+    },
+    "width": 400,
+    "height": 400,
+   "data": {
+      "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/age_group.csv",
+      "format": {
+        "type": "csv",
+        "parse": {"Total": "number"}  
+      }
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Detailed age groups",
+        "type": "nominal",
+        "title": "Age Groups"
+      },
+      "y": {
+        "field": "Total",
+        "type": "quantitative",
+        "title": "Total Population"
+      },
+      "color": {
+        "field": "Gender",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Male", "Female", "Non-binary"],
+          "range": ["#59A14F", "#ff9da6", "#B07AA1"]  
+        },
+        "title": "Gender"
+      },
+      "tooltip": [
+        {"field": "Gender", "type": "nominal", "title": "Gender"},
+        {"field": "Detailed age groups", "type": "nominal", "title": "Age Group"},
+        {"field": "Total", "type": "quantitative", "title": "Total Population"}
+      ]
+    },
+    "config": {
+      "axis": {
+        "labelFontSize": 14,
+        "titleFontSize": 16
+      },
+      "legend": {
+        "labelFontSize": 14,
+        "titleFontSize": 16
+      }
+    }
+  }
+  

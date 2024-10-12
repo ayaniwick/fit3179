@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A waffle chart showing the percentage of people who have confided.",
+  "title": {
+      "text": "% of people who have confided for support",
+      "fontSize": 20,
+      "anchor": "middle"
+    },
+  "data": {
+    "values": [
+      {"Gender": "Male", "Whether confided": "Has confided", "Value": 517.6},
+      {"Gender": "Male", "Whether confided": "Has not confided", "Value": 545.1}
+    ]
+  },
+  "transform": [
+    {
+      "joinaggregate": [{"op": "sum", "field": "Value", "as": "Total"}]
+    },
+    {
+      "calculate": "datum.Value / datum.Total * 100",
+      "as": "PercentOfTotal"
+    },
+    {
+      "calculate": "floor(datum.PercentOfTotal)",
+      "as": "WholePercent"
+    },
+    {
+      "calculate": "sequence(1, datum.WholePercent)",
+      "as": "S"
+    },
+    {"flatten": ["S"]},
+    {
+      "window": [{"op": "row_number", "as": "id"}],
+      "sort": [{"field": "Whether confided", "order": "ascending"}]  
+    },
+    {"calculate": "ceil(datum.id / 10)", "as": "row"},
+    {"calculate": "datum.id - datum.row * 10", "as": "col"}
+  ],
+  "mark": {
+    "type": "circle",
+    "filled": true,
+    "stroke": "black",
+    "strokeWidth": 0.7
+  },
+  "encoding": {
+    "x": {"field": "col", "type": "ordinal", "axis": null},
+    "y": {"field": "row", "type": "ordinal", "axis": null, "sort": "-y"},
+    "color": {
+      "field": "Whether confided",
+      "type": "nominal",
+      "scale": {"range": ["#59A14F", "#79706e"]},  
+      "legend": {
+        "orient": "right",
+        "offset": 10,
+        "labelOffset": 3,
+        "titlePadding": 5,
+        "titleFontSize": 16,
+        "labelFontSize": 14
+      }
+    },
+    "size": {"value": 200},
+    "tooltip": [
+      {"field": "Whether confided", "type": "nominal"},
+      {"field": "PercentOfTotal", "type": "quantitative", "title": "Percentage", "format":".2f"}
+    ]
+  },
+  "config": {
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 16
+    }
+  }
+}
