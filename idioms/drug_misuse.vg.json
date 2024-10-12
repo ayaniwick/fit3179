@@ -30,7 +30,7 @@
       "color": {
         "field": "Total",
         "type": "quantitative",
-        "scale": {"scheme": "yellowgreenblue"},
+        "scale": {"scheme": "teals"},
         "title": "Total Drug Misuse"
       },
       "tooltip": [

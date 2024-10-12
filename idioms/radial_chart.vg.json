@@ -43,7 +43,7 @@
         "type": "nominal",
         "scale": {
           "domain": ["Low", "Moderate", "High", "Very high"],
-          "range": ["green", "yellow", "orange", "red"]
+          "range": ["#ffffb2", "#fecc5c", "#fd8d3c", "#e31a1c"]
         },
         "title": "Distress Level"
       },

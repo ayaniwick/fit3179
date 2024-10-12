@@ -31,7 +31,7 @@
       "color": {
         "field": "Total",
         "type": "quantitative",
-        "scale": {"scheme": "yellowgreenblue"},
+        "scale": {"scheme": "blues"},
         "title": "Total Consumption"
       },
       "tooltip": [
