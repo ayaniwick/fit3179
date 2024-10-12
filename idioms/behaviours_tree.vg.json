@@ -1,5 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "title": {
+    "text": "Suicidal behaviours experienced",
+    "fontSize": 20,
+    "anchor": "middle"
+  },
     "description": "A treemap showing suicidal thoughts and behaviors by gender using CSV data.",
     "width": 500,
     "height": 300,
@@ -11,7 +16,7 @@
         "format": {
           "type": "csv",
           "parse": {
-            "Total": "number"  
+            "Total": "number" 
           }
         },
         "transform": [
@@ -44,8 +49,8 @@
       {
         "name": "color",
         "type": "ordinal",
-        "domain": {"data": "table", "field": "Gender"},
-        "range": {"scheme": "category10"}
+        "domain": ["Male", "Female", "Non-binary"],
+        "range": ["#59A14F", "#ff9da6", "#B07AA1"]  
       }
     ],
     "legends": [
@@ -53,8 +58,8 @@
         "fill": "color",
         "title": "Gender",
         "orient": "right",
-        "labelFontSize": 12,
-        "titleFontSize": 14
+        "labelFontSize": 17,
+        "titleFontSize": 15
       }
     ],
     "marks": [
