@@ -67,7 +67,7 @@
     ]
   },
   "config": {
-    "background": "#d6a5c924",       
+    "background": "#d6a5c90f",       
     "padding": 10,                    
     "view": {          
       "stroke": null                  

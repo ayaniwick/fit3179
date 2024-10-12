@@ -5,10 +5,16 @@ body {
     background-color: #ebb9a14e;
     color: #333;
 }
-
+.heading-container h1 {
+    text-align: center;
+    color: #5d00d6; 
+    font-size: 3em;
+    margin: 24px; 
+    
+}
 /* Title styling */
 h1 {
-    text-align: center;
+    
     font-size: 3em;
     color: #2C3E50;
 }

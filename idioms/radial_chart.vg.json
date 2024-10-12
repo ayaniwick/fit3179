@@ -72,7 +72,7 @@
     }
   },
   "config": {
-    "background": "#d6a5c924",
+    "background": "#d6a5c90f",
     "view": {"stroke": null},
     "arc": {"align": "center"}
   }
