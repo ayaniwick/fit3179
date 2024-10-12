@@ -11,27 +11,34 @@
       "format": {
         "type": "csv",
         "parse": {"Total": "number"}
-      }},
-       "width": 400,
-      "height": 400,
+      }
+    },
+    "width": 400,
+    "height": 400,
     "mark": "rect",
     "encoding": {
       "x": {
         "field": "Misuse of drugs",
         "type": "nominal",
         "title": "Drug Misuse Frequency",
-        "sort": ["At least once a week", "1–3 days a month", "Less than once a month"]
+        "sort": ["At least once a week", "1–3 days a month", "Less than once a month"],
+        "axis": {"labelFontSize": 14, "titleFontSize": 16}  
       },
       "y": {
         "field": "Gender",
         "type": "nominal",
-        "title": "Gender"
+        "title": "Gender",
+        "axis": {"labelFontSize": 14, "titleFontSize": 16}  
       },
       "color": {
         "field": "Total",
         "type": "quantitative",
         "scale": {"scheme": "teals"},
-        "title": "Total Drug Misuse"
+        "title": "Total number of cases",
+        "legend": {
+          "labelFontSize": 14, 
+          "titleFontSize": 16   
+        }
       },
       "tooltip": [
         {"field": "Gender", "type": "nominal", "title": "Gender"},
