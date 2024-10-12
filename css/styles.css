@@ -37,7 +37,53 @@ h1 {
     font-size: 30px;          
     margin-bottom: 10px;      
     font-weight: bold;  
-    background-color: #9c9ede; /* Adds the background color */
-    padding: 10px 0;          /* Adds padding around the text */
-    color: white;      
+    background-color: #c7f0f4; 
+    padding: 10px 0;          
+    color: Black;      
+}
+.intro-section {
+    background-color: #e5e5f7;  
+    padding: 20px;              
+    border-radius: 10px;        
+    margin-bottom: 20px;        
+    text-align: center;         
+}
+
+/* Introduction text styling */
+.intro-text {
+    font-size: 18px;            
+    line-height: 1.6;          
+    color: #333;                
+    font-style: italic;         
+    margin: 0;                  
+}
+.divider-line {
+    border: 0;
+    height: 2px; 
+    background-color: #cab2d6; 
+    margin: 5px 0;
+    margin-top: 15px;           
+}
+.text-container {
+    background-color: #c7e0f0;  
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+/* Description text styling */
+.chart-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Bold styling for the topic heading */
+.chart-description strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;  
 }

@@ -4,7 +4,7 @@
     "text": "Mental health disorders by state in Australia",
     "fontSize": 20, 
     "anchor": "middle"},
-  "width": 600,
+  "width": 400,
   "height": 400,
   "projection": {"type": "mercator"},
   "data": {

@@ -16,31 +16,73 @@
 
 </head>
 <body>
-    <h1>How Serious is Mental Health in Australia?</h1>
     
-    <!-- Pure CSS Grid Layout with Flexbox inside -->
-    <div class="pure-g">
-       
-        <div class="pure-u-1 pure-u-md-1-2 flex-container">
+    <h1>How Serious is Mental Health in Australia?</h1>
+    <div class="intro-section">
+        <p class="intro-text">
+            Mental illness is a general term that refers to a group of illnesses that affects the brain.<br>
+            It is a health problem that signifiacntly affects how a person feels, think, behaves and interacts with other people.<br>
+            People with mental health conditions often also experience stigma, discrimination and human rights violations.<br> 
             
+        </p>
+    </div>
+    
+    <hr class="divider-line">
+    
+    <div class="pure-g">
+        <div class="pure-u-1-3">
             <div id="vis" class="chart-item"></div>
+            
+        </div>
+        <div class="pure-u-1-3">
+            <div class="text-container">
+                <p class="chart-description">
+                    The choropleth map highlights the prevalence of key mental health issues, including affective disorders, anxiety disorders, and substance use disorders across different regions in Australia. Distinct regional variations emerge, with certain areas showing disproportionately high rates of anxiety and affective disorders, indicating potential socio-economic or environmental factors at play. The map suggests that support systems may need to be tailored to specific regions where these mental health challenges are most severe.
+                    
+                    <br><strong>What is psychological distress?</strong><br>
+
+                Measures of psychological distress may include nervousness, agitation, psychological fatigue and depression. 
+                This distress can result in having negative views of the environment, others and oneself. <br>
+                This radial visualization offers a deep dive into the psychological distress experienced by different genders. It reveals that non-binary individuals face disproportionately higher levels of distress, particularly in terms of anxiety and affective disorders. Females show significant levels of anxiety, while males report higher substance use disorders. These insights call for gender-sensitive mental health interventions to address the distinct challenges faced by different gender groups.
+                </p>
+            </div>
+        </div>
+        <div class="pure-u-1-3">
             <div id="radial_chart" class="chart-item"></div>
         </div>
     </div>
+    <hr class="divider-line">
     <div class="pure-g">
+        <div class="pure-u-1">
+            <h2 class="row-title">Majority of individuals turn to substances to cope with their mental health issues...</h2>
+        </div>
         <div class="pure-u-1 pure-u-md-1-2 flex-container">
             
             <div id="alcohol_heatmap" class="chart-item"></div>
             <div id="drug_heatmap" class="chart-item"></div>
         </div>
     </div>
+    <hr class="divider-line">
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 flex-container">
-            
+        <div class="pure-u-1-3">  
             <div id="behaviour_treemap" class="chart-item"></div>
+        </div>
+        <div class="pure-u-1-3">
+            <div class="text-container">
+                <p class="chart-description">
+                    The treemap provides a stark look at the gender differences in suicidal thoughts, plans, and attempts.<br>
+                     Non-binary individuals experience disproportionately high rates of suicidal ideation, with significant numbers also seen among males and females. This highlights the critical need for targeted mental health interventions, particularly for those struggling with severe mental distress across genders.<br><br>
+                    The stacked bar chart shifts focus to the relationship between age and the prevalence of mental disorders, including anxiety, affective, and substance use disorders. <br>
+                    Young adults, especially those aged 16-34, face higher rates of psychological distress, with non-binary individuals again showing the highest prevalence. <br>
+                    This insight underscores how age and gender intersect to create distinct mental health challenges that require a nuanced, age- and gender-sensitive approach to mental health care.
+                </p>
+            </div>
+        </div>
+        <div class="pure-u-1-3">
             <div id="stacked_chart" class="chart-item"></div>
         </div>
     </div>
+    <hr class="divider-line">
     <div class="pure-g">
         <div class="pure-u-1">
             <h2 class="row-title">Thankfully, some people are taking the support they need</h2>
@@ -58,5 +100,10 @@
             <div id="non-binary_waffle" class="chart-item"></div>
         </div>
     </div>
+    <hr class="divider-line">
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <h2 class="row-title">Sourced by: ABS</h2>
+        </div>
 </body>
 </html>
