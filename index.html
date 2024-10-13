@@ -6,7 +6,9 @@
     <title>National Study of Mental Wellbeing in Australia</title>
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
     <!-- Vega and Vega-Lite libraries -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -35,22 +37,18 @@
         <div class="pure-u-1">
             <h2 class="row-title">Key Mental Health issues across different states in Australia</h2>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 flex-container">
+        <div class="pure-u-2-3">
             
             <div id="vis" class="chart-item"></div>
             
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 flex-container">
+        <div class="pure-u-1-3">
             <div class="text-container">
                 <p class="chart-description">
-                    The choropleth map highlights the prevalence of key mental health issues, including affective disorders, anxiety disorders, and substance use disorders across different states in Australia. 
-                    This indicates potential socio-economic or environmental factors at play. The map suggests that support systems may need to be tailored to specific regions where these mental health challenges are most severe.
-                    
-                    <br><strong>What is psychological distress?</strong><br>
-
-                Measures of psychological distress may include nervousness, agitation, psychological fatigue and depression. 
-                This distress can result in having negative views of the environment, others and oneself. <br>
-                This radial visualization offers a deep dive into the psychological distress experienced by different genders. It reveals that non-binary individuals face disproportionately higher levels of distress, particularly in terms of anxiety and affective disorders. Females show significant levels of anxiety, while males report higher substance use disorders. These insights call for gender-sensitive mental health interventions to address the distinct challenges faced by different gender groups.
+                    The choropleth map highlights the prevalence of key mental health issues, including 
+                    <br><strong>affective disorders,</strong><br> <strong>anxiety disorders</strong>  and,<br>  <strong>substance use disorders</strong><br> across different regions in Australia.<br> 
+                    Distinct regional variations emerge, with certain areas showing disproportionately high rates of <strong>anxiety and affective disorders,</strong> indicating potential socio-economic or environmental factors at play. 
+                    The map suggests that support systems may need to be tailored to specific regions where these mental health challenges are most severe.
                 </p>
             </div>
         </div>
@@ -60,9 +58,22 @@
         <div class="pure-u-1">
             <h2 class="row-title">Psychological Distress experienced across genders</h2>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 flex-container">
+        <div class="pure-u-2-3">
             <div id="radial_chart" class="chart-item"></div>
             
+        </div>
+        <div class="pure-u-1-3">
+            <div class="text-container">
+                <p class="chart-description">
+                    <strong>What is psychological distress?</strong><br>
+
+                Measures of psychological distress may include <strong>nervousness, agitation, psychological fatigue and depression.</strong> 
+                This distress can result in having negative views of the environment, others and oneself. <br>
+                This radial visualization offers a deep dive into the psychological distress experienced by different genders. It reveals that <strong>non-binary individuals </strong> face disproportionately higher levels of distress, particularly in terms of anxiety and affective disorders. 
+                <strong>Females</strong> show significant levels of <strong>anxiety,</strong> while <strong>males</strong> report <strong>higher substance use disorders</strong>.<br> 
+                These insights call for gender-sensitive mental health interventions to address the distinct challenges faced by different gender groups.
+                </p>
+            </div>
         </div>
     </div>
    
@@ -71,7 +82,7 @@
         <div class="pure-u-1">
             <h2 class="row-title">Prevalence of Mental Disorders across different age groups and Suicidal ideation </h2>
         </div>
-        <div class="pure-u-1-3">  
+        <div class="pure-u-2-3">  
             <div id="stacked_chart" class="chart-item"></div>
         </div>
         <div class="pure-u-1-3">
@@ -80,16 +91,31 @@
                     The stacked bar chart shifts focus to the relationship between age and the prevalence of mental disorders, including anxiety, affective, and substance use disorders. <br>
                     <strong>Young adults,</strong> especially those aged <strong>16-34,</strong> face higher rates of psychological distress, with <strong>non-binary individuals</strong> again showing the highest prevalence. <br>
                     This insight underscores how age and gender intersect to create distinct mental health challenges that require a nuanced, age- and gender-sensitive approach to mental health care.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider-line">
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <h2 class="row-title">Suicidal ideation </h2>
+        </div>
+        <div class="pure-u-2-3">   
+            <div id="behaviour_treemap" class="chart-item"></div>
+        </div>
+        <div class="pure-u-1-3">
+            <div class="text-container">
+                <p class="chart-description">
+                    
                     The treemap provides a stark look at the gender differences in <strong>suicidal thoughts, plans, and attempts</strong>.<br>
                      <strong>Non-binary individuals</strong> experience disproportionately high rates of suicidal ideation, with significant numbers also seen among males and females. This highlights the critical need for targeted mental health interventions, particularly for those struggling with severe mental distress across genders.<br><br>
                     
                 </p>
             </div>
         </div>
-        <div class="pure-u-1-3">
-            <div id="behaviour_treemap" class="chart-item"></div>
-            
-        </div>
+    </div>
+        
     </div>
     <hr class="divider-line">
     <div class="pure-g">
@@ -99,6 +125,9 @@
         <div class="pure-u-1 pure-u-md-1-2 flex-container">
             
             <div id="alcohol_heatmap" class="chart-item"></div>
+            
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 flex-container">
             <div id="drug_heatmap" class="chart-item"></div>
         </div>
     </div>

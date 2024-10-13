@@ -5,8 +5,8 @@
     "fontSize": 20, 
     "anchor": "middle"
   },
-  "width": 300,
-  "height": 400,
+  "width": 700,
+  "height": 500,
   "projection": {"type": "mercator"},
   "data": {
     "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/states.json",

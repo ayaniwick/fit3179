@@ -6,8 +6,8 @@
       "anchor": "middle"
     },
     "description": "A treemap showing suicidal thoughts and behaviors by gender using CSV data.",
-    "width": 500,
-    "height": 300,
+    "width": 800,
+    "height": 400,
     "padding": 5,
     "data": [
       {
@@ -57,7 +57,7 @@
       {
         "fill": "color",
         "title": "Gender",
-        "orient": "bottom", 
+        "orient": "right", 
         "labelFontSize": 17,
         "titleFontSize": 15
       }
