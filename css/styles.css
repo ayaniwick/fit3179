@@ -8,9 +8,24 @@ body {
 .heading-container h1 {
     text-align: center;
     font-size: 3em;
-    color: #2C3E50;
+    color: #f5f7f9;
     margin: 24px; 
     
+}
+.main-title {
+    text-align: center;
+    font-size: 34px;          
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #181fe5, #42aaff);  
+    padding: 30px 0;
+    color: #ffffff;           
+    font-family: 'Montserrat', sans-serif;  
+    letter-spacing: 1px;      
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+    border-radius: 8px;       
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 * {
@@ -27,7 +42,7 @@ body {
 
 /* Ensure each chart takes up 48% of the space inside the flex container */
 .chart-item {
-    width: 100%; /* Make sure the chart takes up full width of its container */
+    width: 100%; 
     padding: 20px;
     background-color: #d6a5c945;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -131,11 +146,11 @@ body {
 .gender-insights li {
     margin-bottom: 10px;
     font-weight: bold; /* Make key points bold */
-    color: #4c4c4c; /* Darker color for emphasis */
+    color: #4c4c4c; 
 }
 
 /* Extra spacing for the paragraph */
 .chart-description {
     line-height: 1.6; /* Increase line spacing for readability */
-    margin-bottom: 15px; /* Add space between paragraphs */
+    margin-bottom: 15px; 
 }

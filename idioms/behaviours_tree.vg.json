@@ -96,7 +96,7 @@
             "baseline": {"value": "middle"},
             "text": {"signal": "datum['Suicidal thoughts and behaviours in lifetime'] + ': ' + datum.Total"},
             "fill": {"value": "black"},
-            "fontSize": {"value": 12}
+            "fontSize": {"value": 16}  
           }
         }
       }
@@ -105,4 +105,3 @@
         "background": "#d6a5c90f"
     }
   }
-  
