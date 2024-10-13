@@ -5,8 +5,8 @@
       "fontSize": 20,
       "anchor": "middle"
     },
-    "width": 400,
-    "height": 400,
+    "width": 380,
+    "height": 380,
    "data": {
       "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/age_group.csv",
       "format": {
