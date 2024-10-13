@@ -106,3 +106,36 @@ body {
     font-weight: bold;
     color: #444;  
 }
+.disorder-list {
+    margin-left: 20px;
+    list-style-type: disc; /* Default bullet style */
+}
+
+.disorder-list li {
+    margin-bottom: 10px; 
+}
+
+.highlight-title {
+    font-size: 20px;
+    background-color: #ff7366ab; /* Light yellow background for emphasis */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Style the list with bullet points for insights */
+.gender-insights {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.gender-insights li {
+    margin-bottom: 10px;
+    font-weight: bold; /* Make key points bold */
+    color: #4c4c4c; /* Darker color for emphasis */
+}
+
+/* Extra spacing for the paragraph */
+.chart-description {
+    line-height: 1.6; /* Increase line spacing for readability */
+    margin-bottom: 15px; /* Add space between paragraphs */
+}

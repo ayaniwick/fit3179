@@ -6,7 +6,7 @@
     "anchor": "middle"
   },
   "width": 700,
-  "height": 400,
+  "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/ayaniwick/fit3179/refs/heads/main/data/cleaned_psychological_distress.csv",
     "format": {
